@@ -3,7 +3,7 @@ Minggu ke-: 2
 Topik: [judul praktikum]  
 Nama: [Nama Mahasiswa]  
 NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Kelas: 5IKRB 
 
 ---
 
