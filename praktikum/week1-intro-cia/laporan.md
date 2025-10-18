@@ -140,8 +140,4 @@ Date:   Mon Oct 13 10:49:54 2025 +0700
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
     
    ```
-   # Laporan Week 1 - CIA
-
-Ini isi laporan saya...
-
-# test perubahan
+   
