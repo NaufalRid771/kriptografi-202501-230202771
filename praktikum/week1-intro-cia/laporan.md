@@ -134,7 +134,7 @@ Contoh:
 Contoh:
 ```
 commit 21466eed94f14a8d6218b7182ad9c6a9fcdd23ad (HEAD -> main)
-Author: Naufal Raa'id <naufalraaid84@gmail.com>
+Author: Naufal Raa'id <nraid834@gmail.com>
 Date:   Mon Oct 13 10:49:54 2025 +0700
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
