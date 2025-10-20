@@ -8,11 +8,10 @@ Kelas: [5IKRB]
 ---
 
 ## 1. Tujuan
-Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
-
-Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
-Menggambarkan proses enkripsi dan dekripsi sederhana.
-Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:  
+1. Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).  
+2. Menggambarkan proses enkripsi dan dekripsi sederhana.  
+3. Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 
 ---
 

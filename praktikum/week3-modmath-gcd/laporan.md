@@ -64,17 +64,18 @@ def encrypt(text, key):
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
 )
 
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+Perannya antara lain:
+
+-Menyediakan ruang bilangan terbatas (mod n) tempat operasi matematika dilakukan, sehingga hasil operasi selalu “terbungkus” di dalam kisaran tertentu.
+-Memungkinkan fungsi satu arah (one-way function), yaitu operasi yang mudah dilakukan tetapi sulit dibalik (misalnya, mengalikan dua bilangan prima besar mudah, tetapi memfaktorkan hasilnya sangat sulit).
+Digunakan untuk operasi enkripsi, dekripsi, tanda tangan digital, dan pertukaran kunci melalui operasi seperti perpangkatan modular:
+𝐶 = 𝑀<sup>𝑒</sup> mod 𝑛 di mana 𝑀M adalah pesan, 𝑒e eksponen publik, dan 𝑛n modulus.
+
 ---
 
 ## 8. Kesimpulan
