@@ -75,6 +75,28 @@ Perannya antara lain:
 -Memungkinkan fungsi satu arah (one-way function), yaitu operasi yang mudah dilakukan tetapi sulit dibalik (misalnya, mengalikan dua bilangan prima besar mudah, tetapi memfaktorkan hasilnya sangat sulit).
 Digunakan untuk operasi enkripsi, dekripsi, tanda tangan digital, dan pertukaran kunci melalui operasi seperti perpangkatan modular:
 𝐶 = 𝑀<sup>𝑒</sup> mod 𝑛 di mana 𝑀M adalah pesan, 𝑒e eksponen publik, dan 𝑛n modulus.
+Pentingnya invers modular dalam algoritma kunci publik (contoh: RSA)
+
+Invers modular diperlukan untuk menghitung kunci privat dari kunci publik.
+
+Dalam RSA:
+
+Kunci publik terdiri dari 
+(
+𝑒
+,
+𝑛
+)
+(e,n)
+Kunci privat adalah 𝑑d, yang merupakan invers modular dari 
+e terhadap 𝜑(𝑛φ(n):𝑒𝑑≡1(mod
+(𝑛))e⋅d≡1(modφ(n))
+
+Artinya, d hanya ada jika e dan 𝜑(𝑛)φ(n) relatif prima.
+Tanpa invers modular, proses dekripsi tidak akan membalik hasil enkripsi karena operasi 
+𝑀𝑒 𝑑 mo 𝑛=𝑀Med modn=M tidak akan berlaku.
+
+Jadi, invers modular memastikan adanya simetri matematis antara proses enkripsi dan dekripsi dalam sistem kunci publik.
 
 ---
 

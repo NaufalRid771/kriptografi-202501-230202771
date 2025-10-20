@@ -200,7 +200,8 @@ Manajemen kunci → Prosedur untuk distribusi, penyimpanan, dan perlindungan kun
 - Pertanyaan 2: Kelebihan:Lebih cepat dan efisien untuk data besar.
 Algoritmanya lebih sederhana.
 Tidak perlu berbagi kunci rahasia secara langsung.
-Lebih aman untuk komunikasi terbuka Kelemahan:
+Lebih aman untuk komunikasi terbuka 
+Kelemahan:
 Distribusi kunci sulit (harus dikirim secara aman).
 Tidak cocok untuk komunikasi banyak pihak.
 Proses enkripsi/dekripsi lebih lambat.
