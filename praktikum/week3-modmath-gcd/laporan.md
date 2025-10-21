@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 3 
-Topik: [judul praktikum]  
+Topik: Modular Math (Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit)  
 Nama: Naufal Raa'id
 NIM: 230202771  
 Kelas:5IKRB   
@@ -23,6 +23,7 @@ Algoritma Euclidean digunakan untuk mencari pembagi bersama terbesar (GCD) antar
 
 Logaritma diskrit merupakan kebalikan dari eksponensiasi modular, yaitu mencari 
 𝑥x pada persamaan 𝑎𝑥≡𝑏(mod𝑛)ax≡b(modn). Masalah ini sangat sulit diselesaikan untuk modulus besar, dan karenanya menjadi dasar keamanan banyak sistem kriptografi modern.
+
 ---
 
 ## 3. Alat dan Bahan
