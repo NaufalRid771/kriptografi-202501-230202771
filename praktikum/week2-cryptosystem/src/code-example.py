@@ -21,7 +21,7 @@ def decrypt(ciphertext, key):
     return result
 
 if __name__ == "__main__":
-    message = "Nanda Erdi Pratama"
+    message = "Naufal Raaid"
     key = 5
 
     enc = encrypt(message, key)
