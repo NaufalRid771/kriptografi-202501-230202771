@@ -184,12 +184,9 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Naufal Raa'id <email>
-Date:   2025-09-20
+commit 13beabbc5f5344c42b479ece29e464c49b8a3e56 (HEAD -> main, origin/main, origin/HEAD)
+Author: Naufal Raa'id <nraid834@gmail.com>
+Date:   Mon Oct 27 16:44:03 2025 +0700
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week4-entropy-unicity
 ```
