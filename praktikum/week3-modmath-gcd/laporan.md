@@ -171,5 +171,12 @@ Contoh:
 ---
 
 ## 10. Commit Log
-### Langkah 1 — Implementasi Caesar Cipher
+(Tuliskan bukti commit Git yang relevan.  
+Contoh:
+```
+commit abc12345
+Author: Naufal Raa'id <nraid834@gmail.com>
+Date:   2025-09-20
+
+    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
