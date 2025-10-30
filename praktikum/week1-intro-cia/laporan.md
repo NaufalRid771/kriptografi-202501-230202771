@@ -130,9 +130,6 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
 commit 21466eed94f14a8d6218b7182ad9c6a9fcdd23ad (HEAD -> main)
 Author: Naufal Raa'id <nraid834@gmail.com>
 Date:   Mon Oct 13 10:49:54 2025 +0700
