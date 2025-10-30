@@ -107,16 +107,42 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
+1. Apa kelemahan utama algoritma Caesar Cipher dan Vigenère Cipher?
+jawab:Kelemahan Utama Caesar Cipher dan Vigenère Cipher
+Caesar Cipher:
+
+Kunci terbatas: Hanya 25 kemungkinan shift (kunci 1-25), sehingga mudah dipecahkan dengan brute-force (mencoba semua kunci).
+Rentan analisis frekuensi: Pola frekuensi huruf tetap sama seperti plaintext, karena substitusi monoalfabetik (setiap huruf selalu diganti dengan huruf yang sama).
+Tidak aman untuk pesan panjang: Pola ulang mudah terdeteksi, dan tidak ada variasi per huruf.
+Vigenère Cipher:
+
+Rentan analisis Kasiski: Jika panjang kunci diketahui (melalui pola ulang dalam ciphertext), bisa dipecah menjadi beberapa Caesar cipher sederhana.
+Analisis frekuensi masih efektif: Meski polialfabetik, jika kunci pendek, frekuensi huruf dalam blok yang sama bisa dianalisis.
+Kunci harus diingat dan dibagikan: Sulit untuk komunikasi aman tanpa kesalahan, dan rentan jika kunci bocor atau salah tebak panjangnya.
+Kedua cipher ini lebih aman dari yang tidak terenkripsi, tapi mudah dipecahkan dengan metode modern atau komputer.
+
+2. Mengapa cipher klasik mudah diserang dengan analisis frekuensi?
+jawab:Cipher klasik (seperti Caesar atau substitusi sederhana) mudah diserang analisis frekuensi karena distribusi huruf dalam bahasa alami tidak acak. Huruf seperti E, T, A sering muncul (frekuensi tinggi), sedangkan Q, Z jarang. Dalam ciphertext:
+
+Jika cipher hanya mengganti huruf (substitusi monoalfabetik), frekuensi huruf tetap sama, sehingga penyerang bisa memetakan huruf ciphertext ke plaintext berdasarkan frekuensi umum.
+Contoh: Huruf paling sering di ciphertext kemungkinan adalah E. Ini tidak berlaku untuk cipher polialfabetik seperti Vigenère (jika kunci panjang), tapi masih rentan jika kunci pendek.
+Analisis ini dikembangkan oleh ahli seperti Al-Kindi pada abad ke-9, dan efektif karena bahasa manusia memiliki pola statistik yang dapat diprediksi tanpa kunci.
+
+3. Bandingkan kelebihan dan kelemahan cipher substitusi vs transposisi.
+jawab:Cipher Substitusi (mengganti huruf, e.g., Caesar, Vigenère):
+
+Kelebihan: Lebih aman dari analisis frekuensi sederhana karena mengubah identitas huruf (frekuensi berubah jika polialfabetik). Vigenère lebih kompleks dengan kunci berulang, menambah variasi.
+Kelemahan: Rentan brute-force jika kunci kecil (Caesar), atau analisis Kasiski (Vigenère). Sulit untuk pesan panjang tanpa kesalahan manusia, dan frekuensi masih bisa dianalisis jika pola terdeteksi.
+Cipher Transposisi (mengatur ulang urutan, e.g., Columnar):
+
+Kelebihan: Frekuensi huruf tetap sama seperti plaintext, sehingga analisis frekuensi dasar tidak langsung membantu; fokus pada urutan. Lebih sederhana untuk implementasi manual dan tidak mengubah huruf.
+Kelemahan: Rentan jika pola grid atau kunci terdeteksi (mis., melalui uji coba urutan). Lebih lemah dari substitusi karena tidak mengubah identitas huruf, sehingga kombinasi dengan substitusi (seperti dalam cipher modern) lebih disarankan. Mudah dipecahkan dengan anagram atau analisis statistik urutan. 
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kesimpulan
+Cipher klasik, seperti Caesar, Vigenère, dan Transposisi, merupakan fondasi kriptografi manual yang bergantung pada substitusi atau pengaturan ulang huruf, dengan modular aritmetika sebagai basis matematika untuk operasi siklik pada alfabet. Caesar sederhana namun rentan brute-force dan analisis frekuensi karena shift tetap; Vigenère lebih kompleks dengan kunci berulang, tapi masih pecah melalui analisis Kasiski jika panjang kunci terdeteksi. Transposisi menyembunyikan urutan tanpa mengubah huruf, lebih tahan frekuensi dasar tapi lemah jika pola grid diketahui.
 
----
+Secara umum, cipher klasik mudah diserang analisis frekuensi karena pola statistik bahasa manusia (frekuensi huruf seperti E/T) tetap terlihat, terutama pada substitusi monoalfabetik. Substitusi lebih kuat melawan frekuensi tapi rentan brute-force, sedangkan transposisi lebih sederhana namun kurang aman tanpa kombinasi. Meski historis penting, mereka tidak cukup untuk keamanan modern, yang memerlukan algoritma komputasional seperti AES. Pemahaman ini membantu dalam evolusi kriptografi saat ini.
 
 ## 9. Daftar Pustaka
 (Cantumkan referensi yang digunakan.  
