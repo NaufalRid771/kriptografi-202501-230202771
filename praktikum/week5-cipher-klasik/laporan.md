@@ -99,10 +99,8 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+![Hasil Eksekusi](screenshots/hasil.png)
+
 
 ---
 
@@ -153,12 +151,9 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit  a5acf4a0ec22e0e9eb27199d614cace1d55f231e (HEAD -> main)
+Author: Naufal Raa'id <nraid834@gmail.com>
+Date:   Thu Oct 30 20:52:38 2025 +0700
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week5-cipher-klasik
 ```
