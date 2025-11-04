@@ -79,20 +79,112 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
+### Langkah 1 — Implementasi Caesar Cipher
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+def caesar_encrypt(plaintext, key):
+    result = ""
+    for char in plaintext:
+        if char.isalpha():
+            shift = 65 if char.isupper() else 97
+            result += chr((ord(char) - shift + key) % 26 + shift)
+        else:
+            result += char
+    return result
+
+def caesar_decrypt(ciphertext, key):
+    return caesar_encrypt(ciphertext, -key)
+
+# Contoh uji
+msg = "CLASSIC CIPHER"
+key = 3
+enc = caesar_encrypt(msg, key)
+dec = caesar_decrypt(enc, key)
+print("Plaintext :", msg)
+print("Ciphertext:", enc)
+print("Decrypted :", dec)
 ```
-)
+
+---
+
+### Langkah 2 — Implementasi Vigenère Cipher
+```python
+def vigenere_encrypt(plaintext, key):
+    result = []
+    key = key.lower()
+    key_index = 0
+    for char in plaintext:
+        if char.isalpha():
+            shift = ord(key[key_index % len(key)]) - 97
+            base = 65 if char.isupper() else 97
+            result.append(chr((ord(char) - base + shift) % 26 + base))
+            key_index += 1
+        else:
+            result.append(char)
+    return "".join(result)
+
+def vigenere_decrypt(ciphertext, key):
+    result = []
+    key = key.lower()
+    key_index = 0
+    for char in ciphertext:
+        if char.isalpha():
+            shift = ord(key[key_index % len(key)]) - 97
+            base = 65 if char.isupper() else 97
+            result.append(chr((ord(char) - base - shift) % 26 + base))
+            key_index += 1
+        else:
+            result.append(char)
+    return "".join(result)
+
+# Contoh uji
+msg = "KRIPTOGRAFI"
+key = "KEY"
+enc = vigenere_encrypt(msg, key)
+dec = vigenere_decrypt(enc, key)
+print("Plaintext :", msg)
+print("Ciphertext:", enc)
+print("Decrypted :", dec)
+```
+
+### Langkah 3 — Implementasi Transposisi Sederhana
+```python
+def transpose_encrypt(plaintext, key=5):
+    ciphertext = [''] * key
+    for col in range(key):
+        pointer = col
+        while pointer < len(plaintext):
+            ciphertext[col] += plaintext[pointer]
+            pointer += key
+    return ''.join(ciphertext)
+
+def transpose_decrypt(ciphertext, key=5):
+    num_of_cols = int(len(ciphertext) / key + 0.9999)
+    num_of_rows = key
+    num_of_shaded_boxes = (num_of_cols * num_of_rows) - len(ciphertext)
+    plaintext = [''] * num_of_cols
+    col = 0
+    row = 0
+    for symbol in ciphertext:
+        plaintext[col] += symbol
+        col += 1
+        if (col == num_of_cols) or (col == num_of_cols - 1 and row >= num_of_rows - num_of_shaded_boxes):
+            col = 0
+            row += 1
+    return ''.join(plaintext)
+
+# Contoh uji
+msg = "TRANSPOSITIONCIPHER"
+enc = transpose_encrypt(msg, key=5)
+dec = transpose_decrypt(enc, key=5)
+print("Plaintext :", msg)
+print("Ciphertext:", enc)
+print("Decrypted :", dec)
+```
 
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
+- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
 - Jelaskan apakah hasil sesuai ekspektasi.  
 - Bahas error (jika ada) dan solusinya. 
@@ -100,7 +192,6 @@ def encrypt(text, key):
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](screenshots/hasil.png)
-
 
 ---
 
@@ -136,11 +227,15 @@ Cipher Transposisi (mengatur ulang urutan, e.g., Columnar):
 Kelebihan: Frekuensi huruf tetap sama seperti plaintext, sehingga analisis frekuensi dasar tidak langsung membantu; fokus pada urutan. Lebih sederhana untuk implementasi manual dan tidak mengubah huruf.
 Kelemahan: Rentan jika pola grid atau kunci terdeteksi (mis., melalui uji coba urutan). Lebih lemah dari substitusi karena tidak mengubah identitas huruf, sehingga kombinasi dengan substitusi (seperti dalam cipher modern) lebih disarankan. Mudah dipecahkan dengan anagram atau analisis statistik urutan. 
 
+---
+
 ## 8. Kesimpulan
 Kesimpulan
 Cipher klasik, seperti Caesar, Vigenère, dan Transposisi, merupakan fondasi kriptografi manual yang bergantung pada substitusi atau pengaturan ulang huruf, dengan modular aritmetika sebagai basis matematika untuk operasi siklik pada alfabet. Caesar sederhana namun rentan brute-force dan analisis frekuensi karena shift tetap; Vigenère lebih kompleks dengan kunci berulang, tapi masih pecah melalui analisis Kasiski jika panjang kunci terdeteksi. Transposisi menyembunyikan urutan tanpa mengubah huruf, lebih tahan frekuensi dasar tapi lemah jika pola grid diketahui.
 
 Secara umum, cipher klasik mudah diserang analisis frekuensi karena pola statistik bahasa manusia (frekuensi huruf seperti E/T) tetap terlihat, terutama pada substitusi monoalfabetik. Substitusi lebih kuat melawan frekuensi tapi rentan brute-force, sedangkan transposisi lebih sederhana namun kurang aman tanpa kombinasi. Meski historis penting, mereka tidak cukup untuk keamanan modern, yang memerlukan algoritma komputasional seperti AES. Pemahaman ini membantu dalam evolusi kriptografi saat ini.
+
+---
 
 ## 9. Daftar Pustaka
 (Cantumkan referensi yang digunakan.  
