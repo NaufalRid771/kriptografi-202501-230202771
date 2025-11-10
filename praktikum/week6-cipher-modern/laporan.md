@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 6 
-Topik: [judul praktikum]  
+Topik: Cipher Modern (DES, AES, RSA)  
 Nama: [Naufal Raaid]  
 NIM: [230202771]  
 Kelas: [5IKRB]  
