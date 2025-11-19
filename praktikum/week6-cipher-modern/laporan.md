@@ -33,9 +33,9 @@ Berbeda dari dua algoritma sebelumnya, RSA (Rivest–Shamir–Adleman) merupakan
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `aes.py,des.py,rsa.py` di folder `praktikum/week6-cipher-modern/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python aes.py,des.py,rsa.py`.)
 
 ---
 

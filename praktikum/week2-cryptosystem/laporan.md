@@ -2,8 +2,8 @@
 Minggu ke-: 2
 Topik: [Cryptosystem (Komponen, Enkripsi & Dekripsi, Simetris & Asimetris)]  
 Nama: [Naufal Raaid]  
-NIM: [230202771]  
-Kelas: [5IKRB]  
+NIM: 230202771
+Kelas: 5IKRB  
 
 ---
 

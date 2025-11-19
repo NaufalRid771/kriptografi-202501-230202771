@@ -72,9 +72,9 @@ Urut kolom: A, B, C → Baca: H E L L O W O R D → Ciphertext "HELLOWORLD" (tan
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `caesar.py,transpose.py,vigenere.py` di folder `praktikum/week5-cipher-klasik/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python caesar.py,transpose.py,vigenere.py`.
 
 ---
 
