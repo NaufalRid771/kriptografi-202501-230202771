@@ -64,20 +64,13 @@ h = SHA256.new(message)
 # Buat tanda tangan dengan private key
 signature = pkcs1_15.new(private_key).sign(h)
 print("Signature:", signature.hex())
-```
 
----
-```python
 try:
     pkcs1_15.new(public_key).verify(h, signature)
     print("Verifikasi berhasil: tanda tangan valid.")
 except (ValueError, TypeError):
     print("Verifikasi gagal: tanda tangan tidak valid.")
-```
 
-
-
-```python
 # Modifikasi pesan
 fake_message = b"Hello, ini pesan palsu."
 h_fake = SHA256.new(fake_message)
@@ -99,9 +92,7 @@ except (ValueError, TypeError):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
+![Hasil Eksekusi](screenshots/hasil.png)
 )
 
 ---
