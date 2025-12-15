@@ -23,6 +23,7 @@ Ketika penerima menerima pesan dan tanda tangan yang menyertainya, proses verifi
 1. Menghasilkan ulang nilai hash dari pesan asli yang ia terima. 
 2. Mendekripsi Tanda Tangan Digital yang diterima menggunakan Kunci Publik milik pengirim. 
 3. Membandingkan nilai hash yang dihasilkan ulang (langkah 1) dengan nilai hash hasil dekripsi (langkah 2). Jika kedua nilai hash tersebut sama, maka tiga jaminan terpenuhi: Integritas (pesan tidak berubah), Keaslian (pesan benar-benar dikirim oleh pemilik Kunci Privat), dan Non-Repudiasi (pengirim tidak dapat menyangkal telah mengirim pesan tersebut).
+
 ---
 
 ## 3. Alat dan Bahan
@@ -89,9 +90,6 @@ except (ValueError, TypeError):
 ```
 
 ---
-)
-
----
 
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
@@ -121,6 +119,8 @@ Jawab:Tanda Tangan Digital menjamin properti ini melalui proses matematis yang m
 3. Bagaimana peran Certificate Authority (CA) dalam sistem tanda tangan digital modern?  
 Jawab:Peran utama Certificate Authority (CA) adalah membangun dan memelihara kepercayaan (trust) dalam sistem kunci publik. CA bertindak sebagai pihak ketiga tepercaya yang memverifikasi identitas seseorang atau organisasi. Setelah identitas diverifikasi, CA mengeluarkan Sertifikat Digital yang secara resmi mengikat Kunci Publik mereka dengan identitas yang sah tersebut. Dengan menandatangani sertifikat menggunakan Kunci Privatnya sendiri, CA memastikan bahwa penerima dapat memercayai Kunci Publik yang disajikan, mencegah penipuan dan serangan Man-in-the-Middle dalam skala luas.
 
+---
+
 ## 8. Kesimpulan
 Berdasarkan pembahasan mengenai analisis risiko keamanan informasi dengan standar ISO/IEC 27001 dan ISO/IEC 27005, dapat disimpulkan bahwa pengelolaan keamanan informasi merupakan kebutuhan penting bagi organisasi, khususnya instansi pemerintah, untuk melindungi aset informasi dari berbagai ancaman. Penerapan manajemen risiko yang terstruktur memungkinkan organisasi mengidentifikasi, menganalisis, serta memitigasi risiko secara sistematis sehingga dampak gangguan terhadap proses bisnis dapat diminimalkan.
 
@@ -139,12 +139,10 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+commit 3ec28a8b9449c11a020500b0ee85128704da20d1 (HEAD -> main, origin/main, origin/HEAD)
+Author: Naufal Raaid <nraid834@gmail.com>
+Date:   Mon Dec 15 14:49:06 2025 +0700
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week9-digital-signature
 ```
