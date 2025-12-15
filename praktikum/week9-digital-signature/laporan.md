@@ -27,7 +27,7 @@ Ketika penerima menerima pesan dan tanda tangan yang menyertainya, proses verifi
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
+(- Python 3.14.2  
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
 - Library tambahan (misalnya pycryptodome, jika diperlukan)  )
