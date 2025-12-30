@@ -1,21 +1,23 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 12 
+Topik: Aplikasi TLS & E-commerce  
+Nama: Naufal Raaid  
+NIM: 230202771  
+Kelas: 5IKRB
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+Tujuan dari praktikum ini adalah untuk menganalisis penerapan kriptografi pada komunikasi digital, khususnya penggunaan SSL/TLS pada email dan website e-commerce, memahami peran enkripsi dalam melindungi transaksi online, serta mengevaluasi isu etika dan privasi yang muncul dalam penggunaan kriptografi di kehidupan sehari-hari.
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Transport Layer Security (TLS) merupakan protokol keamanan yang digunakan untuk melindungi komunikasi data di jaringan komputer, terutama pada aplikasi web dan email. TLS menyediakan tiga aspek utama keamanan, yaitu kerahasiaan (confidentiality) melalui enkripsi, integritas data (integrity) melalui message authentication code (MAC), dan autentikasi melalui sertifikat digital. TLS merupakan pengembangan dari Secure Sockets Layer (SSL) yang kini sudah tidak direkomendasikan karena kelemahan keamanannya.
 
+Pada website, TLS diimplementasikan melalui protokol HTTPS (HTTP Secure). HTTPS menggunakan sertifikat digital yang diterbitkan oleh Certificate Authority (CA) untuk memverifikasi identitas server. Sertifikat ini berisi informasi seperti nama domain, masa berlaku, serta algoritma kriptografi yang digunakan (misalnya RSA untuk pertukaran kunci dan AES untuk enkripsi data).
+
+Dalam konteks e-commerce dan email, kriptografi berperan penting dalam melindungi informasi sensitif seperti kredensial login, data pribadi, dan informasi pembayaran. Tanpa enkripsi, data tersebut rentan terhadap penyadapan dan serangan seperti Man-in-the-Middle (MitM).
 ---
 
 ## 3. Alat dan Bahan
@@ -29,7 +31,7 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `Aplikasi TLS & E-commerce.py` di folder `praktikum/week12-E-commerce/src/`.
 2. Menyalin kode program dari panduan praktikum.
 3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
 
@@ -56,22 +58,23 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+![Hasil Eksekusi](screenshots/sertifikat_tokopedia.png)
 
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+1. Apa perbedaan utama antara HTTP dan HTTPS? 
+Jawab: HTTP tidak menggunakan enkripsi sehingga data dikirim dalam bentuk plaintext, sedangkan HTTPS menggunakan TLS untuk mengenkripsi komunikasi, memastikan kerahasiaan, integritas, dan autentikasi data.
+
+2. Mengapa sertifikat digital menjadi penting dalam komunikasi TLS?
+Jawab: Sertifikat digital digunakan untuk memverifikasi identitas server dan mencegah pemalsuan identitas. Sertifikat memastikan bahwa pengguna benar-benar terhubung ke server yang sah.
+
+3. Bagaimana kriptografi mendukung privasi dalam komunikasi digital, tetapi sekaligus menimbulkan tantangan hukum dan etika?
+Jawab:Kriptografi melindungi privasi pengguna dengan enkripsi, namun juga menimbulkan dilema etika ketika digunakan untuk menyembunyikan aktivitas ilegal atau saat pemerintah dan perusahaan ingin melakukan pengawasan demi keamanan.
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+TLS dan kriptografi memainkan peran penting dalam menjaga keamanan komunikasi digital, khususnya pada email dan e-commerce. Penggunaan HTTPS dan sertifikat digital mampu melindungi data sensitif pengguna. Namun, penerapan kriptografi juga perlu diimbangi dengan kebijakan etika dan hukum yang jelas.
 
 ---
 
