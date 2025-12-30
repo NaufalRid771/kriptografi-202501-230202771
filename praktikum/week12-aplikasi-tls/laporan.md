@@ -18,6 +18,7 @@ Transport Layer Security (TLS) merupakan protokol keamanan yang digunakan untuk 
 Pada website, TLS diimplementasikan melalui protokol HTTPS (HTTP Secure). HTTPS menggunakan sertifikat digital yang diterbitkan oleh Certificate Authority (CA) untuk memverifikasi identitas server. Sertifikat ini berisi informasi seperti nama domain, masa berlaku, serta algoritma kriptografi yang digunakan (misalnya RSA untuk pertukaran kunci dan AES untuk enkripsi data).
 
 Dalam konteks e-commerce dan email, kriptografi berperan penting dalam melindungi informasi sensitif seperti kredensial login, data pribadi, dan informasi pembayaran. Tanpa enkripsi, data tersebut rentan terhadap penyadapan dan serangan seperti Man-in-the-Middle (MitM).
+
 ---
 
 ## 3. Alat dan Bahan
