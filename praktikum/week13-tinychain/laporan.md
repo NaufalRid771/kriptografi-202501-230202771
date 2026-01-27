@@ -156,7 +156,8 @@ Kelemahan utama PoW dalam efisiensi energi adalah:
 ---
 
 ## 8. Kesimpulan
-Praktikum TinyChain–Proof of Work berhasil menunjukkan bagaimana fungsi hash kriptografis dan mekanisme Proof of Work digunakan untuk menjaga integritas dan keamanan blockchain. Proses mining membuktikan bahwa pencarian nilai nonce membutuhkan usaha komputasi yang signifikan sesuai tingkat kesulitan yang ditetapkan. Dengan demikian, Proof of Work efektif dalam mencegah manipulasi data dan double spending, meskipun memiliki kelemahan pada konsumsi energi yang tinggi.
+Praktikum TinyChain–Proof of Work berhasil menunjukkan bagaimana fungsi hash kriptografis dan mekanisme Proof of Work digunakan untuk menjaga integritas dan keamanan blockchain. Proses mining membuktikan bahwa pencarian nilai nonce membutuhkan usaha komputasi yang signifikan sesuai tingk
+at kesulitan yang ditetapkan. Dengan demikian, Proof of Work efektif dalam mencegah manipulasi data dan double spending, meskipun memiliki kelemahan pada konsumsi energi yang tinggi.
 
 ---
 
