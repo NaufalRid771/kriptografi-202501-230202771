@@ -77,7 +77,7 @@ Jawab:Perbedaan mendasarnya terletak pada sumber masalahnya: apakah kegagalan te
 
 Kelemahan Algoritma (Teoritis): Terjadi ketika logika matematika atau desain kriptografinya sendiri yang cacat atau sudah tidak memadai untuk standar komputasi saat ini. Meskipun programmer menulis kode dengan sempurna, sistem tetap tidak aman.
 
-Contoh: Algoritma DES (Data Encryption Standard) memiliki ruang kunci (key space) yang terlalu kecil 56-bi(t), sehingga mudah dijebol dengan metode brute force menggunakan komputer modern, bukan karena kodenya salah, tapi karena algoritmanya sudah "kalah" oleh perkembangan hardware.
+Contoh: Algoritma DES (Data Encryption Standard) memiliki ruang kunci (key space) yang terlalu kecil (56-bit), sehingga mudah dijebol dengan metode brute force menggunakan komputer modern, bukan karena kodenya salah, tapi karena algoritmanya sudah "kalah" oleh perkembangan hardware.
 
 Kelemahan Implementasi (Praktis): Terjadi ketika algoritmanya sebenarnya aman dan teruji (seperti AES-256), tetapi cara penerapannya dalam software salah atau ceroboh.
 
@@ -108,9 +108,12 @@ Contoh:
 ---
 
 ## 10. Commit Log
-commit f5e6510a31138be9d6d19b42733d9f4c8847f88a (HEAD -> main, origin/main, origin/HEAD)
-Author: Naufal Raaid <nraid834@gmail.com>
-Date:   Tue Jan 27 17:37:45 2026 +0700
+(Tuliskan bukti commit Git yang relevan.  
+Contoh:
+```
+commit abc12345
+Author: Nama Mahasiswa <email>
+Date:   2025-09-20
 
-    praktikum/week16-uas-demo
-
+    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
